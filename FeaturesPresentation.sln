@@ -19,11 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Nullable References", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5. Async Enumerable", "CSharp8\AsyncEnumerable\5. Async Enumerable.csproj", "{73A0659E-904A-4B9E-A38A-E1681507362D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.AsyncDisposable", "CSharp8\AsyncDisposable\4.AsyncDisposable.csproj", "{8C680F3C-09AE-48C9-8F8B-582171B2C54E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4. Async Disposable", "CSharp8\AsyncDisposable\4. Async Disposable.csproj", "{8C680F3C-09AE-48C9-8F8B-582171B2C54E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Using Declarations", "CSharp8\UsingDeclarations\3. Using Declarations.csproj", "{F5963206-C699-41F6-80B5-84AECB2362B7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6. DefaultInterfaceImplementations", "CSharp8\DefaultInterfaceImplementations\6. DefaultInterfaceImplementations.csproj", "{79298C35-C9DB-400C-A397-906BDC96C687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6. Default Interface Implementations", "CSharp8\DefaultInterfaceImplementations\6. Default Interface Implementations.csproj", "{79298C35-C9DB-400C-A397-906BDC96C687}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8. Span", "CSharp8\Span\8. Span.csproj", "{7396B9E6-1F2C-4B3E-9EBE-506269DED0D7}"
 EndProject
