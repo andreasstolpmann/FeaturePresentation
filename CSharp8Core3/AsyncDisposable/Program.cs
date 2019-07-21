@@ -10,10 +10,6 @@ namespace AsyncDisposable
             Console.WriteLine("Before");
             await using var mad = new MyAsyncDisposable();
             Console.WriteLine("After");
-
-            //await using (var mad2 = new MyAsyncDisposable())
-            //{
-            //}
         }
     }
 

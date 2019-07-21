@@ -10,27 +10,33 @@ namespace SwitchStatements
         {
             var shape = GetShape();
 
-            //var result = shape switch
-            //{
-            //    Triangle t => $"Triangle: {t.A} {t.B} {t.C}",
-            //    Rectangle s when s.Height == s.Width => $"Rectangle: {s.Height} {s.Width}",
-            //    Rectangle r => $"Rectangle: {r.Height} {r.Width}"
-            //};
-
+            var result = string.Empty;
             switch (shape)
             {
                 case Triangle t:
-                    Console.WriteLine($"Triangle: {t.A} {t.B} {t.C}");
+                    result = $"Triangle: {t.A} {t.B} {t.C}";
                     break;
 
                 case Rectangle s when s.Height == s.Width:
-                    Console.WriteLine($"Square: {s.Height}");
+                    result = $"Square: {s.Height}";
                     break;
 
                 case Rectangle r:
-                    Console.WriteLine($"Rectangle: {r.Height} {r.Width}");
+                    result = $"Rectangle: {r.Height} {r.Width}";
                     break;
             }
+
+            Console.WriteLine(result);
+
+#region Statement
+            var result2 = shape switch
+            {
+                Triangle t => $"Triangle: {t.A} {t.B} {t.C}",
+                Rectangle s when s.Height == s.Width => $"Rectangle: {s.Height} {s.Width}",
+                Rectangle r => $"Rectangle: {r.Height} {r.Width}"
+            };
+            Console.WriteLine(result2);
+#endregion
         }
 
         public static void Example2()
@@ -41,21 +47,22 @@ namespace SwitchStatements
             {
                 Rectangle s when s.Width == s.Height => $"Square!",
 
-            #region Tuple
+#region Tuple
                 Rectangle (var w, var h, var (_, y)) => $"{w} {h} {y}",
-            #endregion
+#endregion
 
-            #region Positional
+#region Positional
                 Triangle (0, 0, _, _) => $"0, 0",
-            #endregion
+#endregion
                  
-            #region Properties
+#region Properties
                 Triangle { A: 5 } t => $"{t.A} {t.B}",
-                #endregion
+#endregion
 
-            #region Default
+#region Default
                 _ => $"Other!"
-            #endregion
+#endregion
+
             };
         }
 
@@ -66,7 +73,7 @@ namespace SwitchStatements
                 { StatusCode: HttpStatusCode.OK } => $"OK",
                 { StatusCode: HttpStatusCode.NotModified } => $"NotModified",
                 { StatusCode: HttpStatusCode.BadRequest } => throw new Exception("BadRequest"),
-                _ => throw new Exception("Da fuq?!")
+                _ => throw new Exception("Unknown StatusCode!")
             };
         }
 

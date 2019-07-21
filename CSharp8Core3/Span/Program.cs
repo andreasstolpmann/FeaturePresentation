@@ -15,14 +15,14 @@ namespace Span
                 Console.WriteLine(i);
             Console.WriteLine();
 
-            var span = data.AsSpan();
+            Span<int> span = data.AsSpan();
             var spanPart = span[1..3];
             spanPart[0] = 100;
 
             foreach (var i in data)
                 Console.WriteLine(i);
             Console.WriteLine();
-            
+
         }
     }
 }
