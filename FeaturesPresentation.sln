@@ -15,17 +15,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Switch Statements", "CSh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. Ranges", "CSharp8\Ranges\7. Ranges.csproj", "{43C967A1-901D-41AB-B559-E5259EC99F3E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Nullable References", "CSharp8\NullableReferences\2. Nullable References.csproj", "{82B3AB48-34BB-4F69-8EB4-39210690935D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Nullable References", "CSharp8\NullableReferences\3. Nullable References.csproj", "{82B3AB48-34BB-4F69-8EB4-39210690935D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5. Async Enumerable", "CSharp8\AsyncEnumerable\5. Async Enumerable.csproj", "{73A0659E-904A-4B9E-A38A-E1681507362D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4. Async Disposable", "CSharp8\AsyncDisposable\4. Async Disposable.csproj", "{8C680F3C-09AE-48C9-8F8B-582171B2C54E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Using Declarations", "CSharp8\UsingDeclarations\3. Using Declarations.csproj", "{F5963206-C699-41F6-80B5-84AECB2362B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9. Using Declarations", "CSharp8\UsingDeclarations\9. Using Declarations.csproj", "{F5963206-C699-41F6-80B5-84AECB2362B7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6. Default Interface Implementations", "CSharp8\DefaultInterfaceImplementations\6. Default Interface Implementations.csproj", "{79298C35-C9DB-400C-A397-906BDC96C687}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8. Span", "CSharp8\Span\8. Span.csproj", "{7396B9E6-1F2C-4B3E-9EBE-506269DED0D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Null Coalescing Assignment Operator", "CSharp8\NullCoalescingAssignmentOperator\2. Null Coalescing Assignment Operator.csproj", "{6847CE2D-8C50-43C5-B9E6-0B5F549CF56A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{7396B9E6-1F2C-4B3E-9EBE-506269DED0D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7396B9E6-1F2C-4B3E-9EBE-506269DED0D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7396B9E6-1F2C-4B3E-9EBE-506269DED0D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6847CE2D-8C50-43C5-B9E6-0B5F549CF56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6847CE2D-8C50-43C5-B9E6-0B5F549CF56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6847CE2D-8C50-43C5-B9E6-0B5F549CF56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6847CE2D-8C50-43C5-B9E6-0B5F549CF56A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{F5963206-C699-41F6-80B5-84AECB2362B7} = {2A151E54-46DD-46B8-9CA2-895CFFDB2970}
 		{79298C35-C9DB-400C-A397-906BDC96C687} = {2A151E54-46DD-46B8-9CA2-895CFFDB2970}
 		{7396B9E6-1F2C-4B3E-9EBE-506269DED0D7} = {2A151E54-46DD-46B8-9CA2-895CFFDB2970}
+		{6847CE2D-8C50-43C5-B9E6-0B5F549CF56A} = {2A151E54-46DD-46B8-9CA2-895CFFDB2970}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {25751034-9035-4489-B081-6D01D3D5B941}
