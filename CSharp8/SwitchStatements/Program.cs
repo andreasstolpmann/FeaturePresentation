@@ -35,7 +35,6 @@ namespace SwitchStatements
                 Rectangle s when s.Height == s.Width => $"Rectangle: {s.Height} {s.Width}",
                 Rectangle r => $"Rectangle: {r.Height} {r.Width}"
             };
-            Console.WriteLine(result2);
 #endregion
         }
 
