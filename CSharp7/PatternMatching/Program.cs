@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net;
+using System.Web;
 
 namespace PatternMatching
 {
@@ -6,8 +8,9 @@ namespace PatternMatching
     {
         public static void Main(string[] args)
         {
-            Shape shape = GetShape();
+            #region Switch
 
+            Shape shape = GetShape();
             switch (shape)
             {
                 case Triangle t:
@@ -22,6 +25,23 @@ namespace PatternMatching
                     Console.WriteLine($"Rectangle: {r.Height} {r.Width}");
                     break;
             }
+
+            #endregion
+
+
+            #region Try
+
+            try
+            {
+
+            }
+            catch (HttpException e) when(e.GetHttpCode() == (int) HttpStatusCode.BadRequest)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
+            #endregion
         }
 
         private static Shape GetShape()
